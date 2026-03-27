@@ -1,0 +1,766 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d12c9d60123a94cbc2a713e8192ddb, type: 3}
+  m_Name: SceneBlueprintData
+  m_EditorClassIdentifier: Assembly-CSharp::CatzTools.SceneBlueprintData
+  flowManagerScene: {fileID: 102900000, guid: af072dd1c92f70f4697b479e2b14f7b0, type: 3}
+  flowManagerScenePath: Assets/Scenes/FlowManager.unity
+  startSceneName: Start
+  nodes:
+  - id: 3e8ace63-ed10-4706-97ba-402a6dda1c54
+    sceneName: START
+    nodeType: 2
+    sceneAsset: {fileID: 0}
+    position: {x: -52, y: 111}
+    isStartNode: 0
+    connectedNodeIds:
+    - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    description: 
+    tags: []
+  - id: 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    sceneName: Start
+    nodeType: 0
+    sceneAsset: {fileID: 102900000, guid: dac610f63321b124fba2898433477744, type: 3}
+    position: {x: 148, y: 111}
+    isStartNode: 1
+    connectedNodeIds:
+    - c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    description: 
+    tags: []
+  - id: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    sceneName: Menu
+    nodeType: 0
+    sceneAsset: {fileID: 102900000, guid: f835d77f936017f42aa206b80d125f8a, type: 3}
+    position: {x: 153, y: 312}
+    isStartNode: 0
+    connectedNodeIds:
+    - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    - e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    description: 
+    tags: []
+  - id: c76dd63b-3d85-4320-80b0-5cda2c30e70c
+    sceneName: Stage02
+    nodeType: 0
+    sceneAsset: {fileID: 102900000, guid: 7513b6bb2100d7b409223e12863734dd, type: 3}
+    position: {x: 403, y: 110}
+    isStartNode: 0
+    connectedNodeIds:
+    - e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    description: 
+    tags: []
+  - id: e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    sceneName: Stage01
+    nodeType: 0
+    sceneAsset: {fileID: 102900000, guid: 139753753664122458bf790919dc5ede, type: 3}
+    position: {x: 407, y: 307}
+    isStartNode: 0
+    connectedNodeIds:
+    - c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    - c76dd63b-3d85-4320-80b0-5cda2c30e70c
+    - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    description: 
+    tags: []
+  edges:
+  - id: c73560c3-a40c-4b25-aa6d-63e05aa293b7
+    source: 3e8ace63-ed10-4706-97ba-402a6dda1c54
+    target: 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 6
+      duration: 0.8
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 2100000, guid: 93173174ddd5e9540bff90d571aaa1c7, type: 2}
+      shaderOverrides:
+      - displayName: "\u80CC\u666F\u8272"
+        propertyName: _Color
+        valueType: 1
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6A6B\u7DDA\u968E\u6BB5\u6BD4\u4F8B"
+        propertyName: _LinePhase
+        valueType: 0
+        floatValue: 0.6
+        rangeMin: 0.3
+        rangeMax: 0.8
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6A6B\u7DDA\u4EAE\u5EA6"
+        propertyName: _LineBrightness
+        valueType: 0
+        floatValue: 1.5
+        rangeMin: 0.5
+        rangeMax: 3
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4EAE\u9EDE\u5927\u5C0F"
+        propertyName: _DotSize
+        valueType: 0
+        floatValue: 0.02
+        rangeMin: 0.005
+        rangeMax: 0.05
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4EAE\u9EDE\u4EAE\u5EA6"
+        propertyName: _DotBrightness
+        valueType: 0
+        floatValue: 2.5
+        rangeMin: 1
+        rangeMax: 5
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6383\u63CF\u7DDA\u5F37\u5EA6"
+        propertyName: _Scanlines
+        valueType: 0
+        floatValue: 0.3
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u96EA\u82B1\u96DC\u8A0A\u5F37\u5EA6"
+        propertyName: _StaticStrength
+        valueType: 0
+        floatValue: 0.4
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u53CD\u5411\uFF08\u958B\u6A5F\u6A21\u5F0F\uFF09"
+        propertyName: _Reverse
+        valueType: 4
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+  - id: 464db539-0e3b-429d-8d33-42dd8564c4f3
+    source: 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    target: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 6
+      duration: 0.8
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 2100000, guid: 3f6903e38f60dfa4ebb18990fb7346b6, type: 2}
+      shaderOverrides:
+      - displayName: "\u906E\u7F69\u984F\u8272"
+        propertyName: _Color
+        valueType: 1
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4E0D\u900F\u660E\u5EA6"
+        propertyName: _Opacity
+        valueType: 0
+        floatValue: 1
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6495\u88C2\u5F37\u5EA6"
+        propertyName: _TearStrength
+        valueType: 0
+        floatValue: 0.06
+        rangeMin: 0
+        rangeMax: 0.2
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6495\u88C2\u689D\u6578"
+        propertyName: _TearCount
+        valueType: 0
+        floatValue: 8
+        rangeMin: 2
+        rangeMax: 30
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u8272\u504F\u5F37\u5EA6"
+        propertyName: _RGBShift
+        valueType: 0
+        floatValue: 0.015
+        rangeMin: 0
+        rangeMax: 0.05
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u566A\u9EDE\u91CF"
+        propertyName: _NoiseAmount
+        valueType: 0
+        floatValue: 0.3
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u9583\u720D\u901F\u5EA6"
+        propertyName: _FlickerSpeed
+        valueType: 0
+        floatValue: 8
+        rangeMin: 1
+        rangeMax: 20
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+  - id: 38f082f6-258d-4d53-b5c6-1b741ea255e3
+    source: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    target: 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 6
+      duration: 0.8
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 2100000, guid: 93173174ddd5e9540bff90d571aaa1c7, type: 2}
+      shaderOverrides:
+      - displayName: "\u80CC\u666F\u8272"
+        propertyName: _Color
+        valueType: 1
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6A6B\u7DDA\u968E\u6BB5\u6BD4\u4F8B"
+        propertyName: _LinePhase
+        valueType: 0
+        floatValue: 0.6
+        rangeMin: 0.3
+        rangeMax: 0.8
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6A6B\u7DDA\u4EAE\u5EA6"
+        propertyName: _LineBrightness
+        valueType: 0
+        floatValue: 1.5
+        rangeMin: 0.5
+        rangeMax: 3
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4EAE\u9EDE\u5927\u5C0F"
+        propertyName: _DotSize
+        valueType: 0
+        floatValue: 0.02
+        rangeMin: 0.005
+        rangeMax: 0.05
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4EAE\u9EDE\u4EAE\u5EA6"
+        propertyName: _DotBrightness
+        valueType: 0
+        floatValue: 2.5
+        rangeMin: 1
+        rangeMax: 5
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6383\u63CF\u7DDA\u5F37\u5EA6"
+        propertyName: _Scanlines
+        valueType: 0
+        floatValue: 0.3
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u96EA\u82B1\u96DC\u8A0A\u5F37\u5EA6"
+        propertyName: _StaticStrength
+        valueType: 0
+        floatValue: 0.4
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u53CD\u5411\uFF08\u958B\u6A5F\u6A21\u5F0F\uFF09"
+        propertyName: _Reverse
+        valueType: 4
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+  - id: 217c1bcc-09c7-46ca-a9a8-bbc840bc107a
+    source: e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    target: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 6
+      duration: 0.8
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 2100000, guid: 3f6903e38f60dfa4ebb18990fb7346b6, type: 2}
+      shaderOverrides:
+      - displayName: "\u906E\u7F69\u984F\u8272"
+        propertyName: _Color
+        valueType: 1
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4E0D\u900F\u660E\u5EA6"
+        propertyName: _Opacity
+        valueType: 0
+        floatValue: 1
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6495\u88C2\u5F37\u5EA6"
+        propertyName: _TearStrength
+        valueType: 0
+        floatValue: 0.06
+        rangeMin: 0
+        rangeMax: 0.2
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6495\u88C2\u689D\u6578"
+        propertyName: _TearCount
+        valueType: 0
+        floatValue: 8
+        rangeMin: 2
+        rangeMax: 30
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u8272\u504F\u5F37\u5EA6"
+        propertyName: _RGBShift
+        valueType: 0
+        floatValue: 0.015
+        rangeMin: 0
+        rangeMax: 0.05
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u566A\u9EDE\u91CF"
+        propertyName: _NoiseAmount
+        valueType: 0
+        floatValue: 0.3
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u9583\u720D\u901F\u5EA6"
+        propertyName: _FlickerSpeed
+        valueType: 0
+        floatValue: 8
+        rangeMin: 1
+        rangeMax: 20
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+  - id: 21b31f5b-2e0e-4e8f-9919-ad00abd11b48
+    source: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    target: e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 6
+      duration: 0.8
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 2100000, guid: 93173174ddd5e9540bff90d571aaa1c7, type: 2}
+      shaderOverrides:
+      - displayName: "\u80CC\u666F\u8272"
+        propertyName: _Color
+        valueType: 1
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6A6B\u7DDA\u968E\u6BB5\u6BD4\u4F8B"
+        propertyName: _LinePhase
+        valueType: 0
+        floatValue: 0.6
+        rangeMin: 0.3
+        rangeMax: 0.8
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6A6B\u7DDA\u4EAE\u5EA6"
+        propertyName: _LineBrightness
+        valueType: 0
+        floatValue: 1.5
+        rangeMin: 0.5
+        rangeMax: 3
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4EAE\u9EDE\u5927\u5C0F"
+        propertyName: _DotSize
+        valueType: 0
+        floatValue: 0.02
+        rangeMin: 0.005
+        rangeMax: 0.05
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4EAE\u9EDE\u4EAE\u5EA6"
+        propertyName: _DotBrightness
+        valueType: 0
+        floatValue: 2.5
+        rangeMin: 1
+        rangeMax: 5
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6383\u63CF\u7DDA\u5F37\u5EA6"
+        propertyName: _Scanlines
+        valueType: 0
+        floatValue: 0.3
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u96EA\u82B1\u96DC\u8A0A\u5F37\u5EA6"
+        propertyName: _StaticStrength
+        valueType: 0
+        floatValue: 0.4
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u53CD\u5411\uFF08\u958B\u6A5F\u6A21\u5F0F\uFF09"
+        propertyName: _Reverse
+        valueType: 4
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+  - id: 18d46568-4f13-406d-8eeb-9477fe3b3b10
+    source: e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    target: c76dd63b-3d85-4320-80b0-5cda2c30e70c
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 6
+      duration: 0.8
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 2100000, guid: 3f6903e38f60dfa4ebb18990fb7346b6, type: 2}
+      shaderOverrides:
+      - displayName: "\u906E\u7F69\u984F\u8272"
+        propertyName: _Color
+        valueType: 1
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4E0D\u900F\u660E\u5EA6"
+        propertyName: _Opacity
+        valueType: 0
+        floatValue: 1
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6495\u88C2\u5F37\u5EA6"
+        propertyName: _TearStrength
+        valueType: 0
+        floatValue: 0.06
+        rangeMin: 0
+        rangeMax: 0.2
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6495\u88C2\u689D\u6578"
+        propertyName: _TearCount
+        valueType: 0
+        floatValue: 8
+        rangeMin: 2
+        rangeMax: 30
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u8272\u504F\u5F37\u5EA6"
+        propertyName: _RGBShift
+        valueType: 0
+        floatValue: 0.015
+        rangeMin: 0
+        rangeMax: 0.05
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u566A\u9EDE\u91CF"
+        propertyName: _NoiseAmount
+        valueType: 0
+        floatValue: 0.3
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u9583\u720D\u901F\u5EA6"
+        propertyName: _FlickerSpeed
+        valueType: 0
+        floatValue: 8
+        rangeMin: 1
+        rangeMax: 20
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+  - id: 74f03b68-d76a-417b-a267-f9ba9370291a
+    source: c76dd63b-3d85-4320-80b0-5cda2c30e70c
+    target: e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 0
+      duration: 0.5
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 0}
+      shaderOverrides: []
+  - id: a71e0c13-233b-4f75-8a67-0e36c8521e6e
+    source: c76dd63b-3d85-4320-80b0-5cda2c30e70c
+    target: 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 0
+      duration: 0.5
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 0}
+      shaderOverrides: []
+  - id: 1b0b9d66-134c-45a4-9fff-5d4b6b8cfaf4
+    source: e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    target: 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 0
+      duration: 0.5
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 0}
+      shaderOverrides: []

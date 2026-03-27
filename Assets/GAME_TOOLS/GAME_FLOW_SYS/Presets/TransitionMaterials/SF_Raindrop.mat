@@ -33,9 +33,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlurAmount: 0.0390625
-    - _DistortStrength: 0.090625
-    - _DropCount: 30
+    - _BlurAmount: 0.015
+    - _DistortStrength: 0.03
+    - _DropCount: 12
     - _Opacity: 1
     - _Progress: 0
     m_Colors:
