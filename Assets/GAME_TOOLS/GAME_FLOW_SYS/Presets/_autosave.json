@@ -1,0 +1,79 @@
+{
+    "version": "1.0",
+    "generator": "Unity",
+    "nodes": [
+        {
+            "id": "97edbcba-0e36-4a42-873e-fdd6cb374155",
+            "sceneName": "START",
+            "type": "start",
+            "position": {
+                "x": -1.0,
+                "y": 169.0
+            },
+            "isStartNode": false,
+            "description": "",
+            "tags": []
+        },
+        {
+            "id": "60c73a8d-ffc6-4194-b78c-dddc902e3b6c",
+            "sceneName": "StartScreen",
+            "type": "scene",
+            "position": {
+                "x": 199.0,
+                "y": 169.0
+            },
+            "isStartNode": true,
+            "description": "",
+            "tags": []
+        },
+        {
+            "id": "fc591286-f599-43e4-8e43-756b185428dd",
+            "sceneName": "Menu",
+            "type": "scene",
+            "position": {
+                "x": 215.0,
+                "y": 355.0
+            },
+            "isStartNode": false,
+            "description": "",
+            "tags": []
+        }
+    ],
+    "edges": [
+        {
+            "id": "dc7daf32-b525-4166-a8b6-ee3ae6120751",
+            "source": "97edbcba-0e36-4a42-873e-fdd6cb374155",
+            "target": "60c73a8d-ffc6-4194-b78c-dddc902e3b6c",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "dbb0134b-edb8-4e12-9168-114511008100",
+            "source": "60c73a8d-ffc6-4194-b78c-dddc902e3b6c",
+            "target": "fc591286-f599-43e4-8e43-756b185428dd",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "5eff8e5e-21bf-4b4f-9c9a-dcf64470114c",
+            "source": "fc591286-f599-43e4-8e43-756b185428dd",
+            "target": "60c73a8d-ffc6-4194-b78c-dddc902e3b6c",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        }
+    ],
+    "viewport": {
+        "x": 0.0,
+        "y": 0.0,
+        "zoom": 1.0
+    }
+}
