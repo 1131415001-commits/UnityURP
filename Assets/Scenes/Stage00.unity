@@ -260,8 +260,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106632054}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.27984816, y: -0.3647052, z: 0.1159169, w: 0.88047624}
-  m_LocalPosition: {x: 3, y: 1.5, z: -3}
+  m_LocalRotation: {x: 0.18411112, y: -0.37500775, z: 0.07626132, w: 0.90534884}
+  m_LocalPosition: {x: 3, y: 0.8999999, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -298,7 +298,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 3, y: 3, z: -3}
+  FollowOffset: {x: 3, y: 1.8, z: -3}
 --- !u!114 &106632058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +748,7 @@ Transform:
   m_GameObject: {fileID: 1094360166}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.17808, y: 1, z: -0.71526}
+  m_LocalPosition: {x: 4.48, y: 1, z: -0.71526}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -898,6 +898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241827266}
   - component: {fileID: 1241827267}
+  - component: {fileID: 1241827268}
   m_Layer: 0
   m_Name: EventTrigger
   m_TagString: Untagged
@@ -941,6 +942,19 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1241827268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241827265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c7a838b05bfb241bad9e53535f7443, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AreaCameraTrigger
+  targetCamera: {fileID: 106632058}
 --- !u!1 &1311871376
 GameObject:
   m_ObjectHideFlags: 0
