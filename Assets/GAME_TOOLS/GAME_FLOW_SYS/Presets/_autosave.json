@@ -7,8 +7,8 @@
             "sceneName": "START",
             "type": "start",
             "position": {
-                "x": -52.0,
-                "y": 111.0
+                "x": -51.0,
+                "y": 1.0
             },
             "isStartNode": false,
             "description": "",
@@ -19,8 +19,8 @@
             "sceneName": "Start",
             "type": "scene",
             "position": {
-                "x": 148.0,
-                "y": 111.0
+                "x": 149.0,
+                "y": 1.0
             },
             "isStartNode": true,
             "description": "",
@@ -43,8 +43,8 @@
             "sceneName": "Stage02",
             "type": "scene",
             "position": {
-                "x": 403.0,
-                "y": 110.0
+                "x": 332.0,
+                "y": -4.0
             },
             "isStartNode": false,
             "description": "",
@@ -55,8 +55,20 @@
             "sceneName": "Stage01",
             "type": "scene",
             "position": {
-                "x": 407.0,
-                "y": 307.0
+                "x": 355.0,
+                "y": 190.0
+            },
+            "isStartNode": false,
+            "description": "",
+            "tags": []
+        },
+        {
+            "id": "4ad69a72-c01c-4bba-b60f-fbd9b613360f",
+            "sceneName": "Stage00",
+            "type": "scene",
+            "position": {
+                "x": 495.0,
+                "y": -30.0
             },
             "isStartNode": false,
             "description": "",
@@ -67,26 +79,6 @@
         {
             "id": "c73560c3-a40c-4b25-aa6d-63e05aa293b7",
             "source": "3e8ace63-ed10-4706-97ba-402a6dda1c54",
-            "target": "16a57b4c-e956-4f6c-b745-3e07ea39b7c4",
-            "label": "",
-            "data": {
-                "condition": "",
-                "action": ""
-            }
-        },
-        {
-            "id": "464db539-0e3b-429d-8d33-42dd8564c4f3",
-            "source": "16a57b4c-e956-4f6c-b745-3e07ea39b7c4",
-            "target": "c052e8d1-3a33-4c4b-96f8-05e43d20aa13",
-            "label": "",
-            "data": {
-                "condition": "",
-                "action": ""
-            }
-        },
-        {
-            "id": "38f082f6-258d-4d53-b5c6-1b741ea255e3",
-            "source": "c052e8d1-3a33-4c4b-96f8-05e43d20aa13",
             "target": "16a57b4c-e956-4f6c-b745-3e07ea39b7c4",
             "label": "",
             "data": {
@@ -115,26 +107,6 @@
             }
         },
         {
-            "id": "18d46568-4f13-406d-8eeb-9477fe3b3b10",
-            "source": "e4490bce-d491-4fe6-9ad1-5854a2139c6f",
-            "target": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
-            "label": "",
-            "data": {
-                "condition": "",
-                "action": ""
-            }
-        },
-        {
-            "id": "74f03b68-d76a-417b-a267-f9ba9370291a",
-            "source": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
-            "target": "e4490bce-d491-4fe6-9ad1-5854a2139c6f",
-            "label": "",
-            "data": {
-                "condition": "",
-                "action": ""
-            }
-        },
-        {
             "id": "a71e0c13-233b-4f75-8a67-0e36c8521e6e",
             "source": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
             "target": "16a57b4c-e956-4f6c-b745-3e07ea39b7c4",
@@ -145,9 +117,29 @@
             }
         },
         {
-            "id": "1b0b9d66-134c-45a4-9fff-5d4b6b8cfaf4",
+            "id": "5ef1c7ae-341e-452a-9f8c-b6a0c796d962",
+            "source": "16a57b4c-e956-4f6c-b745-3e07ea39b7c4",
+            "target": "c052e8d1-3a33-4c4b-96f8-05e43d20aa13",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "83cec4cb-0c39-4ebb-9dc7-feec47cac5df",
+            "source": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
+            "target": "c052e8d1-3a33-4c4b-96f8-05e43d20aa13",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "e1d3e0a6-91d8-47b7-9af7-adfe3131b06b",
             "source": "e4490bce-d491-4fe6-9ad1-5854a2139c6f",
-            "target": "16a57b4c-e956-4f6c-b745-3e07ea39b7c4",
+            "target": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
             "label": "",
             "data": {
                 "condition": "",
