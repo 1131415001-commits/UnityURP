@@ -728,6 +728,7 @@ GameObject:
   - component: {fileID: 1094360168}
   - component: {fileID: 1094360167}
   - component: {fileID: 1094360171}
+  - component: {fileID: 1094360172}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -855,6 +856,27 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1094360172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094360166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92156de2726839d4d98933cac70b1c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  moveSpeed: 5
+  jumpHeight: 2
+  gravity: -20
+  cameraTransform: {fileID: 374616200}
+  inputAsset: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  actionMapName: Player
+  moveActionName: Move
+  jumpActionName: Jump
+  animator: {fileID: 0}
 --- !u!1 &1185031143
 GameObject:
   m_ObjectHideFlags: 0
