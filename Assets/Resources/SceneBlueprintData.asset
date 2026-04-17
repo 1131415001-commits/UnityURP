@@ -20,7 +20,7 @@ MonoBehaviour:
     sceneName: START
     nodeType: 2
     sceneAsset: {fileID: 0}
-    position: {x: -51, y: 1}
+    position: {x: -66, y: -61}
     isStartNode: 0
     connectedNodeIds:
     - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
@@ -30,7 +30,7 @@ MonoBehaviour:
     sceneName: Start
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: dac610f63321b124fba2898433477744, type: 3}
-    position: {x: 149, y: 1}
+    position: {x: 134, y: -61}
     isStartNode: 1
     connectedNodeIds:
     - c052e8d1-3a33-4c4b-96f8-05e43d20aa13
@@ -40,28 +40,30 @@ MonoBehaviour:
     sceneName: Menu
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: f835d77f936017f42aa206b80d125f8a, type: 3}
-    position: {x: 153, y: 312}
+    position: {x: 168, y: 295}
     isStartNode: 0
     connectedNodeIds:
     - e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
     description: 
     tags: []
   - id: c76dd63b-3d85-4320-80b0-5cda2c30e70c
     sceneName: Stage02
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: 7513b6bb2100d7b409223e12863734dd, type: 3}
-    position: {x: 332, y: -4}
+    position: {x: 308, y: -68}
     isStartNode: 0
     connectedNodeIds:
     - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
     - c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    - e4490bce-d491-4fe6-9ad1-5854a2139c6f
     description: 
     tags: []
   - id: e4490bce-d491-4fe6-9ad1-5854a2139c6f
     sceneName: Stage01
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: 139753753664122458bf790919dc5ede, type: 3}
-    position: {x: 355, y: 190}
+    position: {x: 335, y: 301}
     isStartNode: 0
     connectedNodeIds:
     - c052e8d1-3a33-4c4b-96f8-05e43d20aa13
@@ -452,6 +454,30 @@ MonoBehaviour:
   - id: e1d3e0a6-91d8-47b7-9af7-adfe3131b06b
     source: e4490bce-d491-4fe6-9ad1-5854a2139c6f
     target: c76dd63b-3d85-4320-80b0-5cda2c30e70c
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 0
+      duration: 0.5
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 0}
+      shaderOverrides: []
+  - id: 1e394ef7-0657-43f3-8571-c1e7cbce8ca3
+    source: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    target: 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 0
+      duration: 0.5
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 0}
+      shaderOverrides: []
+  - id: 53c55404-faa4-4572-b0a8-0ce80b7cffdb
+    source: c76dd63b-3d85-4320-80b0-5cda2c30e70c
+    target: e4490bce-d491-4fe6-9ad1-5854a2139c6f
     label: 
     condition: 
     action: 

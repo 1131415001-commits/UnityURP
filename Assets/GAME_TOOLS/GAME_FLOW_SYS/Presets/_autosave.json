@@ -7,8 +7,8 @@
             "sceneName": "START",
             "type": "start",
             "position": {
-                "x": -51.0,
-                "y": 1.0
+                "x": -66.0,
+                "y": -61.0
             },
             "isStartNode": false,
             "description": "",
@@ -19,8 +19,8 @@
             "sceneName": "Start",
             "type": "scene",
             "position": {
-                "x": 149.0,
-                "y": 1.0
+                "x": 134.0,
+                "y": -61.0
             },
             "isStartNode": true,
             "description": "",
@@ -31,8 +31,8 @@
             "sceneName": "Menu",
             "type": "scene",
             "position": {
-                "x": 153.0,
-                "y": 312.0
+                "x": 168.0,
+                "y": 295.0
             },
             "isStartNode": false,
             "description": "",
@@ -43,8 +43,8 @@
             "sceneName": "Stage02",
             "type": "scene",
             "position": {
-                "x": 332.0,
-                "y": -4.0
+                "x": 308.0,
+                "y": -68.0
             },
             "isStartNode": false,
             "description": "",
@@ -55,8 +55,8 @@
             "sceneName": "Stage01",
             "type": "scene",
             "position": {
-                "x": 355.0,
-                "y": 190.0
+                "x": 335.0,
+                "y": 301.0
             },
             "isStartNode": false,
             "description": "",
@@ -140,6 +140,26 @@
             "id": "e1d3e0a6-91d8-47b7-9af7-adfe3131b06b",
             "source": "e4490bce-d491-4fe6-9ad1-5854a2139c6f",
             "target": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "1e394ef7-0657-43f3-8571-c1e7cbce8ca3",
+            "source": "c052e8d1-3a33-4c4b-96f8-05e43d20aa13",
+            "target": "16a57b4c-e956-4f6c-b745-3e07ea39b7c4",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "53c55404-faa4-4572-b0a8-0ce80b7cffdb",
+            "source": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
+            "target": "e4490bce-d491-4fe6-9ad1-5854a2139c6f",
             "label": "",
             "data": {
                 "condition": "",
