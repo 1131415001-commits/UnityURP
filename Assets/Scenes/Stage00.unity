@@ -727,7 +727,6 @@ GameObject:
   - component: {fileID: 1094360169}
   - component: {fileID: 1094360168}
   - component: {fileID: 1094360167}
-  - component: {fileID: 1094360172}
   - component: {fileID: 1094360171}
   m_Layer: 0
   m_Name: Player
@@ -825,7 +824,7 @@ Transform:
   m_GameObject: {fileID: 1094360166}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.89, y: 1, z: -7.6}
+  m_LocalPosition: {x: 0, y: 1, z: -8.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -856,34 +855,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1094360172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094360166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 168aa43dbc857ea44ad0a220160fd8ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractionTrigger
-  playerTag: Player
-  interactAction:
-    m_Name: Interact
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 59636159-b5d5-4d9b-92b8-1c6dbcd1b493
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  promptText: "\u6309 E \u4E92\u52D5"
-  promptRoot: {fileID: 0}
-  promptLabel: {fileID: 0}
-  onInteract:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1185031143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,6 +974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241827266}
   - component: {fileID: 1241827267}
+  - component: {fileID: 1241827269}
   - component: {fileID: 1241827268}
   m_Layer: 0
   m_Name: EventTrigger
@@ -1060,6 +1032,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AreaCameraTrigger
   targetCamera: {fileID: 106632058}
+--- !u!114 &1241827269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241827265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168aa43dbc857ea44ad0a220160fd8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractionTrigger
+  playerTag: Player
+  interactAction:
+    m_Name: Interact
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 62c3d14c-cfca-48ea-a51a-3fb1e866863d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  promptText: "\u6309 E \u4E92\u52D5"
+  promptRoot: {fileID: 1827644215}
+  promptLabel: {fileID: 0}
+  onInteract:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1311871376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,6 +1419,7 @@ GameObject:
   - component: {fileID: 1827644219}
   - component: {fileID: 1827644218}
   - component: {fileID: 1827644217}
+  - component: {fileID: 1827644220}
   m_Layer: 5
   m_Name: '[HUD]'
   m_TagString: Untagged
@@ -1435,7 +1436,7 @@ RectTransform:
   m_GameObject: {fileID: 1827644215}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.04, y: 0.02, z: 0.04}
+  m_LocalScale: {x: 0.02, y: 0.01, z: 0.02}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 438042008}
@@ -1444,7 +1445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1.13}
+  m_AnchoredPosition: {x: 0, y: 1}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827644217
@@ -1510,6 +1511,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1827644220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827644215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad3676ca00dc0404e886ba5290bd1bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Billboard
+  targetCamera: {fileID: 374616199}
+  lockYAxis: 0
+  flip: 1
 --- !u!1 &2102903009
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,10 +1558,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1827644216}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 60, y: 60}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102903011
 MonoBehaviour:
@@ -1571,7 +1587,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
