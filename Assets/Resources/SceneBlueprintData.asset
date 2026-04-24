@@ -74,7 +74,7 @@ MonoBehaviour:
     sceneName: Stage00
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: 92b3ff5989f97bc4a8ccf5da153ad32c, type: 3}
-    position: {x: 495, y: -30}
+    position: {x: 483, y: -67}
     isStartNode: 0
     connectedNodeIds: []
     description: 
