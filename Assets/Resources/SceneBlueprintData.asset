@@ -20,7 +20,7 @@ MonoBehaviour:
     sceneName: START
     nodeType: 2
     sceneAsset: {fileID: 0}
-    position: {x: -66, y: -61}
+    position: {x: -92, y: -64}
     isStartNode: 0
     connectedNodeIds:
     - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
@@ -30,7 +30,7 @@ MonoBehaviour:
     sceneName: Start
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: dac610f63321b124fba2898433477744, type: 3}
-    position: {x: 134, y: -61}
+    position: {x: 108, y: -64}
     isStartNode: 1
     connectedNodeIds:
     - c052e8d1-3a33-4c4b-96f8-05e43d20aa13
@@ -40,18 +40,20 @@ MonoBehaviour:
     sceneName: Menu
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: f835d77f936017f42aa206b80d125f8a, type: 3}
-    position: {x: 168, y: 295}
+    position: {x: 134, y: 123}
     isStartNode: 0
     connectedNodeIds:
     - e4490bce-d491-4fe6-9ad1-5854a2139c6f
     - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
+    - 4ad69a72-c01c-4bba-b60f-fbd9b613360f
+    - c76dd63b-3d85-4320-80b0-5cda2c30e70c
     description: 
     tags: []
   - id: c76dd63b-3d85-4320-80b0-5cda2c30e70c
     sceneName: Stage02
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: 7513b6bb2100d7b409223e12863734dd, type: 3}
-    position: {x: 308, y: -68}
+    position: {x: 334, y: -67}
     isStartNode: 0
     connectedNodeIds:
     - 16a57b4c-e956-4f6c-b745-3e07ea39b7c4
@@ -63,7 +65,7 @@ MonoBehaviour:
     sceneName: Stage01
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: 139753753664122458bf790919dc5ede, type: 3}
-    position: {x: 335, y: 301}
+    position: {x: 228, y: 273}
     isStartNode: 0
     connectedNodeIds:
     - c052e8d1-3a33-4c4b-96f8-05e43d20aa13
@@ -74,9 +76,10 @@ MonoBehaviour:
     sceneName: Stage00
     nodeType: 0
     sceneAsset: {fileID: 102900000, guid: 92b3ff5989f97bc4a8ccf5da153ad32c, type: 3}
-    position: {x: 483, y: -67}
+    position: {x: -67, y: 94}
     isStartNode: 0
-    connectedNodeIds: []
+    connectedNodeIds:
+    - c052e8d1-3a33-4c4b-96f8-05e43d20aa13
     description: 
     tags: []
   edges:
@@ -434,11 +437,115 @@ MonoBehaviour:
     condition: 
     action: 
     transition:
-      type: 0
-      duration: 0.5
+      type: 6
+      duration: 0.8
       color: {r: 0, g: 0, b: 0, a: 1}
-      customMaterial: {fileID: 0}
-      shaderOverrides: []
+      customMaterial: {fileID: 2100000, guid: 93173174ddd5e9540bff90d571aaa1c7, type: 2}
+      shaderOverrides:
+      - displayName: "\u80CC\u666F\u8272"
+        propertyName: _Color
+        valueType: 1
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6A6B\u7DDA\u968E\u6BB5\u6BD4\u4F8B"
+        propertyName: _LinePhase
+        valueType: 0
+        floatValue: 0.6
+        rangeMin: 0.3
+        rangeMax: 0.8
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6A6B\u7DDA\u4EAE\u5EA6"
+        propertyName: _LineBrightness
+        valueType: 0
+        floatValue: 1.5
+        rangeMin: 0.5
+        rangeMax: 3
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4EAE\u9EDE\u5927\u5C0F"
+        propertyName: _DotSize
+        valueType: 0
+        floatValue: 0.02
+        rangeMin: 0.005
+        rangeMax: 0.05
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u4EAE\u9EDE\u4EAE\u5EA6"
+        propertyName: _DotBrightness
+        valueType: 0
+        floatValue: 2.5
+        rangeMin: 1
+        rangeMax: 5
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u6383\u63CF\u7DDA\u5F37\u5EA6"
+        propertyName: _Scanlines
+        valueType: 0
+        floatValue: 0.3
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u96EA\u82B1\u96DC\u8A0A\u5F37\u5EA6"
+        propertyName: _StaticStrength
+        valueType: 0
+        floatValue: 0.4
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
+      - displayName: "\u53CD\u5411\uFF08\u958B\u6A5F\u6A21\u5F0F\uFF09"
+        propertyName: _Reverse
+        valueType: 4
+        floatValue: 0
+        rangeMin: 0
+        rangeMax: 1
+        colorR: 0
+        colorG: 0
+        colorB: 0
+        colorA: 1
+        enumNames: []
+        enumValues: []
+        textureValue: {fileID: 0}
   - id: 83cec4cb-0c39-4ebb-9dc7-feec47cac5df
     source: c76dd63b-3d85-4320-80b0-5cda2c30e70c
     target: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
@@ -478,6 +585,42 @@ MonoBehaviour:
   - id: 53c55404-faa4-4572-b0a8-0ce80b7cffdb
     source: c76dd63b-3d85-4320-80b0-5cda2c30e70c
     target: e4490bce-d491-4fe6-9ad1-5854a2139c6f
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 0
+      duration: 0.5
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 0}
+      shaderOverrides: []
+  - id: 01ffcc19-f9a5-4765-bdfc-828a87c0175f
+    source: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    target: 4ad69a72-c01c-4bba-b60f-fbd9b613360f
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 0
+      duration: 0.5
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 0}
+      shaderOverrides: []
+  - id: 4c625f9e-eb95-4479-af7b-c409b46d3813
+    source: 4ad69a72-c01c-4bba-b60f-fbd9b613360f
+    target: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    label: 
+    condition: 
+    action: 
+    transition:
+      type: 0
+      duration: 0.5
+      color: {r: 0, g: 0, b: 0, a: 1}
+      customMaterial: {fileID: 0}
+      shaderOverrides: []
+  - id: af1f5861-b06a-48a0-a3c9-0c2ef7fde081
+    source: c052e8d1-3a33-4c4b-96f8-05e43d20aa13
+    target: c76dd63b-3d85-4320-80b0-5cda2c30e70c
     label: 
     condition: 
     action: 

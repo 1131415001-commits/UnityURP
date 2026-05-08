@@ -7,8 +7,8 @@
             "sceneName": "START",
             "type": "start",
             "position": {
-                "x": -66.0,
-                "y": -61.0
+                "x": -92.0,
+                "y": -64.0
             },
             "isStartNode": false,
             "description": "",
@@ -19,8 +19,8 @@
             "sceneName": "Start",
             "type": "scene",
             "position": {
-                "x": 134.0,
-                "y": -61.0
+                "x": 108.0,
+                "y": -64.0
             },
             "isStartNode": true,
             "description": "",
@@ -31,8 +31,8 @@
             "sceneName": "Menu",
             "type": "scene",
             "position": {
-                "x": 168.0,
-                "y": 295.0
+                "x": 134.0,
+                "y": 123.0
             },
             "isStartNode": false,
             "description": "",
@@ -43,8 +43,8 @@
             "sceneName": "Stage02",
             "type": "scene",
             "position": {
-                "x": 308.0,
-                "y": -68.0
+                "x": 334.0,
+                "y": -67.0
             },
             "isStartNode": false,
             "description": "",
@@ -55,8 +55,8 @@
             "sceneName": "Stage01",
             "type": "scene",
             "position": {
-                "x": 335.0,
-                "y": 301.0
+                "x": 228.0,
+                "y": 273.0
             },
             "isStartNode": false,
             "description": "",
@@ -67,8 +67,8 @@
             "sceneName": "Stage00",
             "type": "scene",
             "position": {
-                "x": 483.0,
-                "y": -67.0
+                "x": -67.0,
+                "y": 94.0
             },
             "isStartNode": false,
             "description": "",
@@ -160,6 +160,36 @@
             "id": "53c55404-faa4-4572-b0a8-0ce80b7cffdb",
             "source": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
             "target": "e4490bce-d491-4fe6-9ad1-5854a2139c6f",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "01ffcc19-f9a5-4765-bdfc-828a87c0175f",
+            "source": "c052e8d1-3a33-4c4b-96f8-05e43d20aa13",
+            "target": "4ad69a72-c01c-4bba-b60f-fbd9b613360f",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "4c625f9e-eb95-4479-af7b-c409b46d3813",
+            "source": "4ad69a72-c01c-4bba-b60f-fbd9b613360f",
+            "target": "c052e8d1-3a33-4c4b-96f8-05e43d20aa13",
+            "label": "",
+            "data": {
+                "condition": "",
+                "action": ""
+            }
+        },
+        {
+            "id": "af1f5861-b06a-48a0-a3c9-0c2ef7fde081",
+            "source": "c052e8d1-3a33-4c4b-96f8-05e43d20aa13",
+            "target": "c76dd63b-3d85-4320-80b0-5cda2c30e70c",
             "label": "",
             "data": {
                 "condition": "",
