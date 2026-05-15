@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CatzTools
+namespace CatzTools.GameFlow
 {
     #region 轉場控制器
     /// <summary>
@@ -51,6 +51,24 @@ namespace CatzTools
         /// <summary>是否正在播放轉場</summary>
         public bool IsPlaying => _isPlaying;
         #endregion 公開屬性
+
+        #region Bootstrap
+        /// <summary>
+        /// 立即清除所有遮罩（Bootstrap 模式：從任意場景啟動時不需要黑幕）
+        /// </summary>
+        public void ClearOverlay()
+        {
+            if (_overlay != null)
+            {
+                _overlay.color = new Color(_defaultColor.r, _defaultColor.g, _defaultColor.b, 0f);
+                _overlay.raycastTarget = false;
+                _overlay.gameObject.SetActive(false);
+            }
+
+            if (_shaderOverlay != null)
+                _shaderOverlay.gameObject.SetActive(false);
+        }
+        #endregion Bootstrap
 
         #region Unity 生命週期
         private void Awake()
@@ -123,6 +141,21 @@ namespace CatzTools
             }
 
             _isPlaying = false;
+        }
+        /// <summary>
+        /// 播放獨立轉場效果（不切換場景）。
+        /// 出場遮住畫面 → 執行 onCovered 回調 → 入場退回。
+        /// </summary>
+        /// <param name="settings">轉場設定（效果、時長、顏色等）</param>
+        /// <param name="onCovered">畫面被完全遮住時的回調（可 null）</param>
+        public async Task PlayEffect(TransitionSettings settings, System.Func<Task> onCovered = null)
+        {
+            await PlayTransitionOut(settings);
+
+            if (onCovered != null)
+                await onCovered();
+
+            await PlayTransitionIn(settings);
         }
         #endregion 轉場播放
 

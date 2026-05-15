@@ -36,7 +36,7 @@ Material:
     - _Ripple: 0
     - _RippleSpread: 1
     - _RippleStrength: 1
-    - _Smoothness: 1
+    - _Smoothness: 0.05
     - _TileX: 10
     - _TileY: 10
     m_Colors:
