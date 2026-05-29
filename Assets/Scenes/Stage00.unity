@@ -14815,8 +14815,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789048646}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.046115477, y: -0.71647877, z: 0.047577966, w: 0.6944551}
-  m_LocalPosition: {x: 0.23038605, y: 0.18199997, z: 0.038626637}
+  m_LocalRotation: {x: 0.054209754, y: -0.83478475, z: 0.08357213, w: 0.5414901}
+  m_LocalPosition: {x: 0.27521795, y: 0.198, z: 0.2755365}
   m_LocalScale: {x: 0.07217611, y: 0.29090366, z: 0.09217197}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14858,7 +14858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8b78ac948f05a46a6d8339a503172b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineHardLookAt
-  LookAtOffset: {x: -336.1, y: -42.58, z: -15.64}
+  LookAtOffset: {x: -315.8, y: -68.3, z: -146.3}
 --- !u!114 &1789048650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14877,7 +14877,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 6.24, y: 3.11, z: -4.95}
+  FollowOffset: {x: 6.96, y: 3.19, z: -2.19}
 --- !u!114 &1789048651
 MonoBehaviour:
   m_ObjectHideFlags: 0
