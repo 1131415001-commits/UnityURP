@@ -2983,6 +2983,7 @@ GameObject:
   - component: {fileID: 374616198}
   - component: {fileID: 374616197}
   - component: {fileID: 374616196}
+  - component: {fileID: 374616201}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3140,6 +3141,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &374616201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374616195}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81162d155d8c0554e9b3f9e3221a4cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraManager
 --- !u!4 &384822167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4232834961669785442, guid: bd9b2ceaf0a16854b8dd2a39e315f9cb, type: 3}
