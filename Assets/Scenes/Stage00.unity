@@ -623,8 +623,8 @@ Transform:
   m_GameObject: {fileID: 62992387}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16, y: 0.35, z: -1.87}
-  m_LocalScale: {x: 1.67, y: 3.34, z: 1.67}
+  m_LocalPosition: {x: -1.16, y: 1.41, z: -1.87}
+  m_LocalScale: {x: 0.58, y: 1.16, z: 0.58}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 106632055}
@@ -947,7 +947,7 @@ Transform:
   m_GameObject: {fileID: 106632054}
   serializedVersion: 2
   m_LocalRotation: {x: 0.18411112, y: -0.37500775, z: 0.07626132, w: 0.90534884}
-  m_LocalPosition: {x: 1.7964072, y: 0.5389221, z: -1.7964072}
+  m_LocalPosition: {x: 5.172414, y: 1.551724, z: -5.172414}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6210,7 +6210,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8884e9dc3eec2574fab7f391a7164ac9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 739735746}
   m_SourcePrefab: {fileID: 100100000, guid: 8884e9dc3eec2574fab7f391a7164ac9, type: 3}
 --- !u!1 &680127232
 GameObject:
@@ -7015,6 +7018,32 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4304378537825741212, guid: 1d709fa2c0bfeb1409d6ba2b4f5361f3, type: 3}
+--- !u!1 &739735742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8884e9dc3eec2574fab7f391a7164ac9, type: 3}
+  m_PrefabInstance: {fileID: 677957773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &739735746
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739735742}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.94332916, y: 1.2567182, z: 0.97005564}
+  m_Center: {x: -0.00000013411044, y: 0.6283591, z: 0.0124183735}
 --- !u!1 &741489503
 GameObject:
   m_ObjectHideFlags: 0
@@ -10962,7 +10991,7 @@ Transform:
   m_GameObject: {fileID: 1185031143}
   serializedVersion: 2
   m_LocalRotation: {x: 0.17663558, y: -0.06108114, z: 0.01098331, w: 0.98231786}
-  m_LocalPosition: {x: -0.15999997, y: 3.35, z: -9.88}
+  m_LocalPosition: {x: -0.15999997, y: 4.41, z: -9.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11474,19 +11503,39 @@ MonoBehaviour:
   playerTag: Player
   interactAction:
     m_Name: Interact
-    m_Type: 0
-    m_ExpectedControlType: 
+    m_Type: 1
+    m_ExpectedControlType: Button
     m_Id: 0c8dcf84-3b1a-4452-a893-e49464f1e92a
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: ef8a70f5-4c0d-4cb5-8750-784438490184
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Interact
+      m_Flags: 0
     m_Flags: 0
   promptText: "\u6309 E \u4E92\u52D5"
   promptRoot: {fileID: 0}
   promptLabel: {fileID: 0}
   onInteract:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1445603705}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OpenDoor
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1242490008
 GameObject:
   m_ObjectHideFlags: 0
@@ -11941,6 +11990,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 597870957}
     m_Modifications:
+    - target: {fileID: 1595269521309589783, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595269521309589783, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595269521309589783, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595269521309589783, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3869100370868187269, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11988,6 +12053,22 @@ PrefabInstance:
     - target: {fileID: 3925076271668386098, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
       propertyPath: m_Name
       value: wall_with_big_door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417433188558306262, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417433188558306262, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417433188558306262, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417433188558306262, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12857,15 +12938,15 @@ MonoBehaviour:
   playerTag: Player
   interactAction:
     m_Name: Interact
-    m_Type: 0
-    m_ExpectedControlType: 
+    m_Type: 1
+    m_ExpectedControlType: Button
     m_Id: 1008559b-6d5d-4d81-b778-de7f328d8384
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 36f7f0e9-4e63-4d88-9382-30cd52018137
-      m_Path: 
+      m_Path: <Keyboard>/e
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -12887,7 +12968,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: OpenDoor
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &1453560517
@@ -15707,7 +15788,7 @@ Transform:
   m_GameObject: {fileID: 1789048646}
   serializedVersion: 2
   m_LocalRotation: {x: 0.054209754, y: -0.83478475, z: 0.08357213, w: 0.5414901}
-  m_LocalPosition: {x: 0.27521795, y: 0.198, z: 0.2755365}
+  m_LocalPosition: {x: 0.27521795, y: 0.41, z: 0.2755365}
   m_LocalScale: {x: 0.07217611, y: 0.29090366, z: 0.09217197}
   m_ConstrainProportionsScale: 0
   m_Children: []
