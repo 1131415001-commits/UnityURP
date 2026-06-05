@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: a6560a915ef98420e9faacc1c7438823
-NativeFormatImporter:
+guid: a04c87a8d19ee9643af8ed62d4f0f9ff
+DefaultImporter:
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -11,5 +10,5 @@ AssetOrigin:
   productId: 315316
   packageName: Realistic Chest Of Drawers
   packageVersion: 1.0
-  assetPath: Assets/Settings/SampleSceneProfile.asset
+  assetPath: Assets/ChestOfDrawers/Documentation/DOCUMENTATION.pdf
   uploadId: 757057
