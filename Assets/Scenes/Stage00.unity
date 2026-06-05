@@ -4775,6 +4775,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 5146831694650022583, guid: 0fb7e372c2589bf4bb2799ae5548931a, type: 2}
     value: {fileID: 374616196}
+  - key: {fileID: -4086747346885246714, guid: 0fb7e372c2589bf4bb2799ae5548931a, type: 2}
+    value: {fileID: 1445603705}
   m_ExposedReferences:
     m_References:
     - 6abe6ee913b4e864b8e46aa8754efdc3: {fileID: 1431188164}
@@ -12162,9 +12164,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3925076271668386098, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1445603704}
-    - targetCorrespondingSourceObject: {fileID: 3925076271668386098, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1445603707}
     - targetCorrespondingSourceObject: {fileID: 5977057729576712108, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2073111508}
@@ -13117,54 +13116,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 7241128013677831856, guid: eb9807c1a83926347ba8ac724bbf8af3, type: 3}
   m_PrefabInstance: {fileID: 1282025203}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1445603707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343325257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1deade09d42db4041a2d99b3528c8e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractionTrigger
-  playerTag: Player
-  interactAction:
-    m_Name: Interact
-    m_Type: 1
-    m_ExpectedControlType: Button
-    m_Id: 1008559b-6d5d-4d81-b778-de7f328d8384
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 36f7f0e9-4e63-4d88-9382-30cd52018137
-      m_Path: <Keyboard>/e
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Interact
-      m_Flags: 0
-    m_Flags: 0
-  promptText: "\u6309 E \u4E92\u52D5"
-  promptRoot: {fileID: 0}
-  promptLabel: {fileID: 0}
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1445603705}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: OpenDoor
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1453560517
 PrefabInstance:
   m_ObjectHideFlags: 0
